@@ -1,6 +1,17 @@
 ﻿using System;
 class Program
 {
+    static void Main()
+    {
+        Console.Write("Enter your number: ");
+        int n = int.Parse(Console.ReadLine());
+
+        Console.WriteLine($"Even:{Even(n)}");
+        Console.WriteLine($"Odd:{Odd(n)}");
+        Console.WriteLine($"Digit:{Count(n)}");
+        Console.WriteLine($"Sum:{Sum(n)}");
+    }
+
     static int Even(int n)
     {
         int count = 0;
@@ -40,16 +51,5 @@ class Program
             sum += digit - '0';
         }
         return sum;
-    }
-
-    static void Main()
-    {
-        Console.Write("Enter your number: ");
-        int n = int.Parse(Console.ReadLine());
-
-        Console.WriteLine($"Even:{Even(n)}");
-        Console.WriteLine($"Odd:{Odd(n)}");
-        Console.WriteLine($"Digit:{Count(n)}");
-        Console.WriteLine($"Sum:{Sum(n)}");
     }
 }
