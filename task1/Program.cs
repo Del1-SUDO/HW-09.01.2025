@@ -44,7 +44,7 @@ class Program
 
     static void Main()
     {
-        Console.Write("Введите число: ");
+        Console.Write("Enter your number: ");
         int n = int.Parse(Console.ReadLine());
 
         Console.WriteLine($"Even:{Even(n)}");
